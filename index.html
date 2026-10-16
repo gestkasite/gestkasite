@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GESTKA | Formação e Segurança</title>
+<meta name="description" content="GESTKA – Formação e Segurança. Capacitação profissional, cursos e soluções em segurança.">
+<style>
+:root{--black:#050608;--navy:#09111f;--navy2:#0d1728;--red:#e51d2a;--white:#f7f8fa;--muted:#aab2bf;--line:#243044;--card:#101a2a;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.5}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),92%);margin:auto}
+header{position:fixed;z-index:50;top:0;width:100%;background:rgba(5,6,8,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-weight:900;letter-spacing:1.5px;font-size:25px}.logo span{display:block;font-size:9px;letter-spacing:2.4px;color:#b9c0ca;margin-top:-3px}
+nav{display:flex;gap:24px;font-size:12px;font-weight:700;color:#dbe0e7;text-transform:uppercase}nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:6px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.4px;transition:.25s;border:1px solid transparent}
+.btn.red{background:var(--red);color:#fff;box-shadow:0 8px 28px rgba(229,29,42,.2)}.btn.red:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.dark{border-color:#3a4658;background:#0b1220}.btn.dark:hover{border-color:#e51d2a}
+.hero{min-height:760px;padding-top:76px;display:grid;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 78% 45%,rgba(229,29,42,.13),transparent 30%),linear-gradient(120deg,#050608 0%,#09111f 60%,#050608 100%)}
+.hero:after{content:"";position:absolute;inset:auto -10% 0 45%;height:260px;background:linear-gradient(135deg,transparent 49%,rgba(229,29,42,.8) 50%,rgba(229,29,42,.8) 52%,transparent 53%);opacity:.28;pointer-events:none}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:2}
+.kicker{font-size:12px;color:#ff5a64;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(42px,5.5vw,76px);line-height:.98;margin:0 0 22px;letter-spacing:-2.5px;text-transform:uppercase}
+.hero p{max-width:650px;color:#c2c9d3;font-size:18px}
+.person{min-height:500px;border-radius:16px;position:relative;overflow:hidden;background:linear-gradient(145deg,#111b2b,#06080c);border:1px solid #2a3548;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.person img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
+.person .overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,8,.7),transparent 55%,rgba(5,6,8,.1))}
+.person .badge{position:absolute;left:24px;bottom:24px;background:rgba(5,6,8,.78);border:1px solid rgba(255,255,255,.15);padding:16px 18px;border-left:4px solid var(--red)}
+.person .badge b{display:block;font-size:18px}.person .badge small{color:#bfc7d1}
+.stats{display:flex;gap:30px;margin-top:32px;flex-wrap:wrap}.stat b{display:block;font-size:12px}.stat span{color:#7f8998;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+section{padding:96px 0}.sectionHead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.eyebrow{font-size:11px;color:#ff4d59;font-weight:900;letter-spacing:2px;text-transform:uppercase}.sectionHead h2{font-size:clamp(32px,4vw,52px);line-height:1;margin:8px 0 0;text-transform:uppercase;letter-spacing:-1.5px}.sectionHead p{max-width:510px;color:var(--muted)}
+.courses{background:#f4f5f7;color:#0a0e14}.courses .sectionHead p{color:#667080}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.card{background:#fff;border:1px solid #e1e5eb;min-height:350px;padding:23px;position:relative;overflow:hidden;transition:.25s}.card:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,transparent 60%,rgba(229,29,42,.08));pointer-events:none}.card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.12)}
+.num{color:var(--red);font-size:11px;font-weight:900;letter-spacing:1px}.icon{width:48px;height:48px;border-radius:10px;background:#101927;color:#fff;display:grid;place-items:center;margin:20px 0;font-size:21px}
+.card h3{font-size:17px;line-height:1.1;margin:0 0 12px;text-transform:uppercase}.card p{font-size:13px;color:#657083;min-height:86px}.cardActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.cardActions .btn{padding:10px 11px;font-size:10px}.cardActions .btn.dark{color:#fff}
+.impact{padding:48px 0;background:linear-gradient(90deg,#0a101c,#111b2b);border-top:1px solid #202b3c;border-bottom:1px solid #202b3c}.impactIn{display:flex;justify-content:space-between;align-items:center;gap:25px}.impact h2{font-size:clamp(30px,4vw,52px);line-height:.95;margin:0;text-transform:uppercase}.impact h2 span{display:block;color:#ff4b57}
+.material{background:#0a0f18}.materialGrid,.aboutGrid,.consultGrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.visual{min-height:480px;border:1px solid #273346;border-radius:14px;overflow:hidden;background:#0f1827;position:relative}.visual img{width:100%;height:100%;object-fit:cover;display:block}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,10,16,.15),rgba(7,10,16,.7))}
+.featureList{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0}.feature{padding:18px;background:#0f1826;border:1px solid #233047}.feature b{font-size:12px}.feature span{display:block;color:#7f8998;font-size:11px;margin-top:5px}
+.about{background:#f4f5f7;color:#0a0e14}.about .sectionHead p{color:#667080}.about .visual{background:#dfe3e8}.about .visual img{object-position:center}.aboutList{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:28px 0}.aboutList div{padding:14px 16px;background:#fff;border-left:3px solid var(--red);font-weight:800;font-size:13px}
+.docs{background:#0d1420}.docGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.doc{padding:28px;background:#101a2a;border:1px solid #273449}.doc b{display:block;margin:14px 0 7px}.doc p{color:#8e99a9;font-size:12px}.note{font-size:11px;color:#9da6b3;margin-top:22px;border-left:3px solid #667080;padding-left:12px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.gallery div{min-height:180px;border-radius:10px;background:linear-gradient(145deg,#111a28,#07090d);border:1px solid #263146;display:grid;place-items:center;color:#657083;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.gallery .big{grid-row:span 2;min-height:372px}
+.consult{background:#f4f5f7;color:#0a0e14}.serviceGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.service{padding:16px 18px;background:#fff;border-left:3px solid #0d1728;font-weight:800;font-size:12px}
+.whatsapp{background:linear-gradient(135deg,#090c12,#111b2a);text-align:center;position:relative;overflow:hidden}.whatsapp:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;border:1px solid rgba(229,29,42,.22);right:-100px;top:-220px}.whatsapp h2{font-size:clamp(38px,6vw,72px);line-height:.9;text-transform:uppercase;margin:10px auto 18px;max-width:800px}.whatsapp p{color:#aeb7c3}.phone{font-size:24px;font-weight:900;margin:18px 0}
+.instagram{padding:60px 0;border-top:1px solid #202b3c}.instaIn{display:flex;align-items:center;justify-content:space-between;gap:30px}.instaHandle{font-size:28px;font-weight:900}
+.final{padding:80px 0;background:linear-gradient(135deg,#050608,#0d1624);border-top:1px solid #1f2b3e}.final h2{font-size:clamp(40px,6vw,72px);line-height:.92;text-transform:uppercase;margin:0 0 25px}.final p{color:#9da7b5}
+footer{padding:45px 0;background:#030405;border-top:1px solid #1c2532;color:#8e98a6}.foot{display:flex;justify-content:space-between;gap:30px;align-items:start}.foot strong{color:#fff;font-size:22px}.foot small{display:block;margin-top:4px}.footLinks{display:flex;gap:20px;flex-wrap:wrap;font-size:11px;text-transform:uppercase}.footLinks a:hover{color:#fff}
+@media(max-width:1050px){nav{display:none}.grid5{grid-template-columns:repeat(2,1fr)}.heroGrid,.materialGrid,.aboutGrid,.consultGrid{grid-template-columns:1fr}.person{min-height:420px}.docGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.nav{height:68px}.hero{padding-top:68px;min-height:auto;padding-bottom:65px}.heroGrid{gap:35px}.hero p{font-size:16px}.person{min-height:360px}.stats{gap:18px}.grid5,.docGrid,.featureList,.aboutList,.serviceGrid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery .big{grid-row:auto;min-height:230px}.impactIn,.instaIn,.foot{flex-direction:column;align-items:flex-start}.sectionHead{display:block}.sectionHead p{margin-top:20px}.btn{width:100%}.hero .btn{width:auto}.card{min-height:auto}section{padding:70px 0}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="logo" href="#inicio">GESTKA<span>FORMAÇÃO E SEGURANÇA</span></a>
+<nav><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#material">Material Didático</a><a href="#sobre">Sobre</a><a href="#consultoria">Consultoria</a><a href="#contato">Contato</a></nav>
+<a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se agora</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="container heroGrid">
+<div><div class="kicker">GESTKA • Formação e Segurança</div><h1>Capacitação profissional em formação e segurança</h1>
+<p>Conhecimento prático, capacitação profissional e desenvolvimento para quem busca se preparar para o mercado de segurança.</p>
+<p><strong>KAYO OLIVEIRA</strong><br><span style="color:#9da7b5">Instrutor de Segurança Privada • Credenciado pela Polícia Federal • Docente • Palestrante • Instrutor</span></p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:25px"><a class="btn red" href="#cursos">Conheça nossos cursos</a><a class="btn dark" href="https://wa.me/558195118178" target="_blank">Falar no WhatsApp</a></div>
+<div class="stats"><div class="stat"><b>SEGURANÇA E PREVENÇÃO</b><span>Visão preventiva</span></div><div class="stat"><b>PESSOAS CAPACITADAS</b><span>Conhecimento aplicado</span></div><div class="stat"><b>MAIS RESULTADOS</b><span>Preparo profissional</span></div></div>
+</div>
+<div class="person"><img src="hero-kayo.jpeg" alt="Kayo Oliveira - GESTKA Formação e Segurança"><div class="overlay"></div><div class="badge"><b>Kayo Oliveira</b><small>Formação • Capacitação • Segurança</small></div></div>
+</div></section>
+
+<section class="courses" id="cursos"><div class="container">
+<div class="sectionHead"><div><div class="eyebrow">Capacitação profissional</div><h2>Conheça nossos cursos</h2></div><p>Capacitação profissional com conteúdo objetivo, material didático e foco na aplicação prática.</p></div>
+<div class="grid5">
+<article class="card"><div class="num">01</div><div class="icon">◈</div><h3>Segurança Condominial 360°</h3><p>Proteção de pessoas, patrimônio e áreas comuns com uma visão completa e estratégica.</p><div class="cardActions"><a class="btn dark" href="#contato">Saiba mais</a><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se</a></div></article>
+<article class="card"><div class="num">02</div><div class="icon">⚠</div><h3>Gerenciamento de Crises e Mediação</h3><p>Prevenção de conflitos, negociação, mediação e conhecimentos para situações críticas.</p><div class="cardActions"><a class="btn dark" href="#contato">Saiba mais</a><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se</a></div></article>
+<article class="card"><div class="num">03</div><div class="icon">⬡</div><h3>AES – Ações Essenciais de Segurança Privada</h3><p>Conhecimentos essenciais sobre prevenção, postura, observação, comunicação e procedimentos.</p><div class="cardActions"><a class="btn dark" href="#contato">Saiba mais</a><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se</a></div></article>
+<article class="card"><div class="num">04</div><div class="icon">⌂</div><h3>Porteiro e Controle de Acesso</h3><p>Rotinas de portaria, atendimento, controle de pessoas, veículos e procedimentos de segurança.</p><div class="cardActions"><a class="btn dark" href="#contato">Saiba mais</a><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se</a></div></article>
+<article class="card"><div class="num">05</div><div class="icon">◉</div><h3>Monitoramento e Sistemas de Segurança</h3><p>CFTV, monitoramento, sistemas de segurança e tecnologias aplicadas à proteção.</p><div class="cardActions"><a class="btn dark" href="#contato">Saiba mais</a><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se</a></div></article>
+</div>
+<div class="visualShowcase">
+  <img src="cursos-gestka.jpeg" alt="Conheça os 5 cursos GESTKA">
+</div>
+</div></section>
+
+<section class="impact"><div class="container impactIn"><h2>Mais conhecimento.<br><span>Mais qualificação.</span><br>Mais oportunidades.</h2><a class="btn red" href="#contato">Quero me capacitar</a></div></section>
+
+<section class="material" id="material"><div class="container materialGrid"><div class="visual"><img src="material-alunos.jpeg" alt="Material didático e capacitação GESTKA"></div><div><div class="eyebrow">Material didático</div><h2>Completo e atualizado</h2><p style="color:#aeb7c3">Conteúdo desenvolvido com foco nas demandas do mercado, nos procedimentos de segurança e na aplicação prática do conhecimento.</p>
+<div class="featureList"><div class="feature"><b>CONTEÚDO ATUALIZADO</b><span>Organizado para estudo objetivo.</span></div><div class="feature"><b>LINGUAGEM OBJETIVA</b><span>Informação clara e direta.</span></div><div class="feature"><b>APOIO VISUAL E PRÁTICO</b><span>Exemplos e recursos didáticos.</span></div><div class="feature"><b>FOCO NA APLICAÇÃO</b><span>Conhecimento conectado à rotina.</span></div></div>
+<p style="color:#c7ced8;font-size:13px"><strong>Apostilas</strong> • Conteúdo programático • Legislação e procedimentos • Slides • Vídeos • Materiais de apoio</p></div></div></section>
+
+<section class="about" id="sobre"><div class="container aboutGrid"><div class="visual"><img src="material-gestka.png" alt="Material Didático Completo GESTKA"></div><div><div class="eyebrow">Sobre o instrutor</div><h2>Kayo Oliveira</h2><p><strong>INSTRUTOR DE SEGURANÇA PRIVADA</strong></p><div class="aboutList"><div>✓ Credenciado pela Polícia Federal</div><div>✓ Docente</div><div>✓ Palestrante</div><div>✓ Instrutor</div><div>✓ Experiência profissional desde 2013</div><div>✓ Formação e capacitação em segurança</div></div><p>A GESTKA trabalha com formação e capacitação profissional, buscando oferecer conhecimento objetivo, conteúdo estruturado e preparação para os desafios do segmento de segurança.</p><a class="btn dark" href="#contato">Conheça a GESTKA</a></div></div></section>
+
+<section><div class="container"><div class="sectionHead"><div><div class="eyebrow">Diferenciais</div><h2>Por que escolher a GESTKA?</h2></div></div><div class="docGrid">
+<div class="doc"><div class="icon">✓</div><b>Cursos atualizados</b><p>Conteúdo organizado e alinhado à proposta de cada capacitação.</p></div>
+<div class="doc"><div class="icon">▣</div><b>Material didático completo</b><p>Apostilas e recursos para apoiar o aprendizado.</p></div>
+<div class="doc"><div class="icon">◆</div><b>Conteúdo prático e objetivo</b><p>Foco em compreensão e aplicação.</p></div>
+<div class="doc"><div class="icon">◎</div><b>Suporte ao aluno</b><p>Orientação durante a jornada de capacitação.</p></div>
+</div></div></section>
+
+<section class="docs"><div class="container"><div class="sectionHead"><div><div class="eyebrow">Transparência</div><h2>Documentação do aluno</h2></div><p>Conforme a modalidade e as condições do curso contratado, o aluno poderá receber a documentação correspondente à sua capacitação.</p></div>
+<div class="docGrid"><div class="doc"><b>CARTEIRA DE IDENTIFICAÇÃO</b><p>Quando prevista na modalidade contratada.</p></div><div class="doc"><b>CERTIFICADO DE CONCLUSÃO</b><p>Conforme as condições do curso.</p></div><div class="doc"><b>DECLARAÇÃO DE CONCLUSÃO</b><p>Quando aplicável à modalidade.</p></div><div class="doc"><b>MATERIAL DIDÁTICO</b><p>Conteúdo correspondente ao curso.</p></div></div>
+<div class="note">Importante: a certificação e sua finalidade dependem da modalidade e das condições específicas de cada curso. Não se deve presumir reconhecimento oficial, nacional ou equivalência a formação regulamentada sem comprovação específica.</div></div></section>
+
+<section><div class="container"><div class="sectionHead"><div><div class="eyebrow">Comunidade GESTKA</div><h2>Alunos preparados.<br>Profissionais mais fortes.</h2></div><p>Galeria para apresentar fotos reais das capacitações, turmas, certificados e momentos de formação.</p></div>
+<div class="gallery">
+<div class="big"><img src="material-alunos.jpeg" alt="Alunos preparados e certificados GESTKA"></div>
+<div><img src="hero-kayo.jpeg" alt="Kayo Oliveira e turma GESTKA"></div>
+<div><img src="material-gestka.png" alt="Material didático GESTKA"></div>
+<div><img src="cursos-gestka.jpeg" alt="Cursos GESTKA"></div>
+<div><img src="material-alunos.jpeg" alt="Capacitação GESTKA"></div>
+</div></div></section>
+
+<section class="consult" id="consultoria"><div class="container consultGrid"><div><div class="eyebrow">Soluções em segurança</div><h2>Consultoria para empresas e condomínios</h2><p>Consultoria e soluções direcionadas às necessidades de empresas, condomínios, comércios e instituições.</p><a class="btn red" href="https://wa.me/558195118178" target="_blank">Solicitar consultoria</a></div><div class="serviceGrid"><div class="service">ANÁLISE DE VULNERABILIDADE</div><div class="service">ANÁLISE DE RISCOS</div><div class="service">SEGURANÇA CONDOMINIAL</div><div class="service">CONTROLE DE ACESSO</div><div class="service">PREVENÇÃO PATRIMONIAL</div><div class="service">SISTEMAS DE SEGURANÇA</div><div class="service">MONITORAMENTO</div></div></div></section>
+
+<section class="whatsapp" id="contato"><div class="container"><div class="eyebrow">Fale com a GESTKA</div><h2>Sua capacitação começa com conhecimento.</h2><p>Escolha seu curso e fale com a equipe GESTKA.</p><div class="phone">(81) 9511-8178</div><a class="btn red" href="https://wa.me/558195118178?text=Olá%2C%20quero%20conhecer%20os%20cursos%20da%20GESTKA." target="_blank">Falar no WhatsApp</a></div></section>
+
+<section class="instagram"><div class="container instaIn"><div><div class="eyebrow">Instagram</div><div class="instaHandle">@gestorkayooliveira</div><p style="color:#8f99a7">Conteúdos sobre segurança, capacitação profissional, prevenção, cursos e desenvolvimento.</p></div><a class="btn dark" href="https://instagram.com/gestorkayooliveira" target="_blank">Seguir no Instagram</a></div></section>
+
+<section class="final"><div class="container"><h2>Invista na sua<br>capacitação.</h2><p>Mais qualificação. Mais conhecimento. Mais preparo.</p><a class="btn red" href="https://wa.me/558195118178" target="_blank">Inscreva-se agora</a></div></section>
+</main>
+
+<footer><div class="container foot"><div><strong>GESTKA</strong><small>FORMAÇÃO E SEGURANÇA</small><small>Capacitação profissional e soluções em segurança.</small></div><div class="footLinks"><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#material">Material Didático</a><a href="#sobre">Sobre</a><a href="#consultoria">Consultoria</a><a href="#contato">Contato</a></div><div><small>WhatsApp: (81) 9511-8178</small><small>Instagram: @gestorkayooliveira</small></div></div></footer>
+</body>
+</html>
